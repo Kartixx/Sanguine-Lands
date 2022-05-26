@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "sanguine_lands:block/sanguine_sapling"
+  }
+}

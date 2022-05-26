@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bab",
+    "bab"
+  ],
+  "key": {
+    "a": {
+      "item": "sanguine_lands:sanguine_planks"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "sanguine_lands:sanguine_fence_gate"
+  }
+}

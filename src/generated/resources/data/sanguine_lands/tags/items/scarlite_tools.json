@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sanguine_lands:scarlite_sword",
+    "sanguine_lands:scarlite_pickaxe",
+    "sanguine_lands:scarlite_axe",
+    "sanguine_lands:scarlite_shovel"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "sanguine_lands:blood_shard"
+    },
+    "title": "Don't Faint On Me",
+    "description": "Obtain a Blood Shard",
+    "background": "sanguine_lands:textures/block/blood_iron_block.png",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sanguine_lands:blood_shard"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

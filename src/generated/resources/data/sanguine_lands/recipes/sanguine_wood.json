@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "sanguine_lands:sanguine_log"
+    }
+  },
+  "result": {
+    "item": "sanguine_lands:sanguine_wood",
+    "count": 3
+  }
+}

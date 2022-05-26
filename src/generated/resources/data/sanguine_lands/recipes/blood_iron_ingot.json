@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sanguine_lands:blood_iron_block"
+    }
+  ],
+  "result": {
+    "item": "sanguine_lands:blood_iron_ingot",
+    "count": 9
+  }
+}

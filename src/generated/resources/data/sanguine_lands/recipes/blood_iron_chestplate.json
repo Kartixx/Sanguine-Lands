@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "sanguine_lands:blood_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "sanguine_lands:blood_iron_chestplate"
+  }
+}

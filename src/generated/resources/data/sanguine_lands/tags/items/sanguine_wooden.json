@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "sanguine_lands:sanguine_planks",
+    "sanguine_lands:sanguine_stairs",
+    "sanguine_lands:sanguine_slab",
+    "sanguine_lands:sanguine_fence",
+    "sanguine_lands:sanguine_fence_gate",
+    "sanguine_lands:sanguine_button",
+    "sanguine_lands:sanguine_pressure_plate",
+    "sanguine_lands:sanguine_trapdoor",
+    "sanguine_lands:sanguine_door"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "sanguine_lands:block/stripped_sanguine_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "sanguine_lands:block/stripped_sanguine_wood"
+    },
+    "axis=z": {
+      "model": "sanguine_lands:block/stripped_sanguine_wood_horizontal",
+      "x": 90
+    }
+  }
+}

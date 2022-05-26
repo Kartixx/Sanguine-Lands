@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "sanguine_lands:block/sanguine_wood",
+    "end": "sanguine_lands:block/sanguine_wood_top"
+  }
+}

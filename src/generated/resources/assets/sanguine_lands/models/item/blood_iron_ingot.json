@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sanguine_lands:item/blood_iron_ingot"
+  }
+}

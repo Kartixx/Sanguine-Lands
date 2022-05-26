@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sanguine_lands:sanguine_planks"
+    }
+  ],
+  "result": {
+    "item": "sanguine_lands:sanguine_button"
+  }
+}

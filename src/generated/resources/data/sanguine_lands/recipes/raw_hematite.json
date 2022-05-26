@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "item": "minecraft:raw_iron"
+    },
+    {
+      "item": "sanguine_lands:blood_shard"
+    },
+    {
+      "item": "sanguine_lands:blood_shard"
+    }
+  ],
+  "result": {
+    "item": "sanguine_lands:raw_hematite"
+  }
+}

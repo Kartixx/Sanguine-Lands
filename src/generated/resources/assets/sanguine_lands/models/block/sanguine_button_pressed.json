@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "sanguine_lands:block/sanguine_planks"
+  }
+}

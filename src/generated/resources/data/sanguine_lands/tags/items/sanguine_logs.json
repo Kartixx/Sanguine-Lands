@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sanguine_lands:sanguine_log",
+    "sanguine_lands:sanguine_wood",
+    "sanguine_lands:stripped_sanguine_log",
+    "sanguine_lands:stripped_sanguine_wood"
+  ]
+}

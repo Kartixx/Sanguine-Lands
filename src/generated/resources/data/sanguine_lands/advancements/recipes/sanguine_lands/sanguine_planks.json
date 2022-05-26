@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sanguine_lands:sanguine_planks"
+    ]
+  },
+  "criteria": {
+    "has_sanguine_log": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sanguine_lands:sanguine_log"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sanguine_lands:sanguine_planks"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sanguine_log",
+      "has_the_recipe"
+    ]
+  ]
+}

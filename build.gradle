@@ -1,0 +1,164 @@
+buildscript {
+    repositories {
+
+        // Forge
+        maven {url = 'https://maven.minecraftforge.net'}
+
+        // Parchment
+        maven { url = 'https://maven.parchmentmc.org' }
+
+        // Sponge
+        maven {url = 'https://repo.spongepowered.org/repository/maven-public/'}
+
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        classpath 'org.parchmentmc:librarian:1.+'
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+    }
+}
+
+plugins {
+    id 'maven-publish'
+}
+
+apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.parchmentmc.librarian.forgegradle'
+apply plugin: 'org.spongepowered.mixin'
+
+
+version = '1.0'
+group = 'com.kartixx.sanguine_lands' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'sanguine_lands'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
+minecraft {
+
+    mappings channel: 'parchment', version: '2022.05.22-1.18.2'
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            property 'forge.enabledGameTestNamespaces', 'sanguine_lands'
+
+            mods {
+                sanguine_lands {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            property 'forge.enabledGameTestNamespaces', 'sanguine_lands'
+
+            mods {
+                sanguine_lands {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        gameTestServer {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            property 'forge.enabledGameTestNamespaces', 'sanguine_lands'
+
+            mods {
+                sanguine_lands {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        data {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            args '--mod', 'sanguine_lands', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+
+            mods {
+                sanguine_lands {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+repositories {
+
+    // JEI Main
+    maven {
+        name = "Progwml6 maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+
+    // JEI Fallback
+    maven {
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
+
+    // Gecko Lib
+    maven {url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'}
+
+}
+
+dependencies {
+        // Minecraft Forge
+        minecraft "net.minecraftforge:forge:1.18.2-40.1.0"
+
+        // Terra Blender https://www.curseforge.com/minecraft/mc-mods/terrablender/files/3725996
+        implementation fg.deobf("com.github.glitchfiend:TerraBlender-forge:${terrablender_version}")
+
+        // JEI https://www.curseforge.com/minecraft/mc-mods/jei
+        compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")
+        runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
+
+        // Gecko Lib
+        implementation fg.deobf('software.bernie.geckolib:geckolib-1.18-forge:3.0.13')
+}
+
+jar {
+    manifest {
+        attributes([
+                "Specification-Title"     : "SanguineLands",
+                "Specification-Vendor"    : "Kartixx",
+                "Specification-Version"   : "1",
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : project.jar.archiveVersion,
+                "Implementation-Vendor"   : "Kartixx",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+jar.finalizedBy('reobfJar')
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifact jar
+        }
+    }
+    repositories {
+        maven {
+            url "file://${project.projectDir}/mcmodsrepo"
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}

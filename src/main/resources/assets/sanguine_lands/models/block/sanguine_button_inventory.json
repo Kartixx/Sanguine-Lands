@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "sanguine_lands:block/sanguine_planks"
+  }
+}

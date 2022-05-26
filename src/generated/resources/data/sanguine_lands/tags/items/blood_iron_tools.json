@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sanguine_lands:blood_iron_sword",
+    "sanguine_lands:blood_iron_pickaxe",
+    "sanguine_lands:blood_iron_axe",
+    "sanguine_lands:blood_iron_shovel"
+  ]
+}

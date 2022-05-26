@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "sanguine_lands:raw_hematite"
+  },
+  "result": "sanguine_lands:blood_iron_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sanguine_lands:scarlite_shovel"
+    ]
+  },
+  "criteria": {
+    "has_scarlite_gem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sanguine_lands:scarlite_gem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sanguine_lands:scarlite_shovel"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_scarlite_gem",
+      "has_the_recipe"
+    ]
+  ]
+}

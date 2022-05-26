@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "sanguine_lands:sanguine_planks"
+    }
+  },
+  "result": {
+    "item": "sanguine_lands:sanguine_pressure_plate"
+  }
+}

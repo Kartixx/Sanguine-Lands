@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aa",
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "sanguine_lands:sanguine_planks"
+    }
+  },
+  "result": {
+    "item": "sanguine_lands:sanguine_door",
+    "count": 3
+  }
+}

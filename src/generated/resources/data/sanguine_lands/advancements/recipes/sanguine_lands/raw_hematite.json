@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sanguine_lands:raw_hematite"
+    ]
+  },
+  "criteria": {
+    "has_blood_shard": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sanguine_lands:blood_shard"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sanguine_lands:raw_hematite"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_blood_shard",
+      "has_the_recipe"
+    ]
+  ]
+}

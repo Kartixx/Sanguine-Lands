@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "sanguine_lands:block/sanguine_planks"
+  }
+}

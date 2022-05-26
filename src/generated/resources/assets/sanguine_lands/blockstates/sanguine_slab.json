@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "sanguine_lands:block/sanguine_slab_top"
+    },
+    "type=bottom": {
+      "model": "sanguine_lands:block/sanguine_slab"
+    },
+    "type=double": {
+      "model": "sanguine_lands:block/sanguine_planks"
+    }
+  }
+}

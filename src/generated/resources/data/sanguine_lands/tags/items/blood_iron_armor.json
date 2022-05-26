@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sanguine_lands:blood_iron_helmet",
+    "sanguine_lands:blood_iron_chestplate",
+    "sanguine_lands:blood_iron_leggings",
+    "sanguine_lands:blood_iron_boots"
+  ]
+}

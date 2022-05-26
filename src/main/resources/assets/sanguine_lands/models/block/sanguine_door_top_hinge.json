@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "top": "sanguine_lands:block/sanguine_door_top",
+    "bottom": "sanguine_lands:block/sanguine_door_bottom"
+  }
+}

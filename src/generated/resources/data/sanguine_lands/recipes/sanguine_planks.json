@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "sanguine_lands:sanguine_logs"
+    }
+  ],
+  "result": {
+    "item": "sanguine_lands:sanguine_planks",
+    "count": 4
+  }
+}

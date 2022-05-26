@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aa ",
+    "ab ",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "sanguine_lands:blood_iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "sanguine_lands:blood_iron_axe"
+  }
+}

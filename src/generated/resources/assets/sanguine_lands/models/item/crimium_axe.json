@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "sanguine_lands:item/crimium_axe"
+  }
+}
