@@ -30,3 +30,5 @@ public class blood_spider_renderer extends GeoEntityRenderer<blood_spider>{
         return super.getRenderType(animatable, partialTicks, stack, renderTypeBuffer, vertexBuilder, packedLightIn, textureLocation);
     }
 }
+
+// File related to entity crash

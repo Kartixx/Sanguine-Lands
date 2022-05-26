@@ -30,3 +30,5 @@ public class leech_renderer extends GeoEntityRenderer<leech>{
         return super.getRenderType(animatable, partialTicks, stack, renderTypeBuffer, vertexBuilder, packedLightIn, textureLocation);
     }
 }
+
+// File related to entity crash

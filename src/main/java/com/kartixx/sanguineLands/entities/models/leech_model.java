@@ -21,3 +21,5 @@ public class leech_model extends AnimatedGeoModel<leech> {
         return new ResourceLocation(sanguine_lands.MOD_ID, "entities/animations/leech.animation.json");
     }
 }
+
+// File related to entity crash

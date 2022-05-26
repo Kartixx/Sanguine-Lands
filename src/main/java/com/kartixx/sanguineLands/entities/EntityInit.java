@@ -32,3 +32,5 @@ public final class EntityInit {
                     .sized(0.4f, 0.3f)
                     .build(new ResourceLocation(sanguine_lands.MOD_ID, "leech").toString()));
 }
+
+// File related to entity crash

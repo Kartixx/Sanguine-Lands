@@ -21,3 +21,5 @@ public class blood_spider_model extends AnimatedGeoModel<blood_spider>{
         return new ResourceLocation(sanguine_lands.MOD_ID, "entities/animations/blood_spider.animation.json");
     }
 }
+
+// File related to entity crash

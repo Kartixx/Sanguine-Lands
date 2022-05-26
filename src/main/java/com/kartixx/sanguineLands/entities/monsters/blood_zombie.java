@@ -77,3 +77,5 @@ public class blood_zombie extends Monster implements IAnimatable {
         return this.factory;
     }
 }
+
+// File related to entity crash
