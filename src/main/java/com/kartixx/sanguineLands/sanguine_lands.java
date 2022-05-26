@@ -9,9 +9,12 @@ import com.kartixx.sanguineLands.entities.renderers.leech_renderer;
 import com.kartixx.sanguineLands.fluids.FluidInit;
 import com.kartixx.sanguineLands.items.ItemInit;
 import com.kartixx.sanguineLands.items.mod_item_properties;
+import com.kartixx.sanguineLands.world.biomes.mod_region;
+import com.kartixx.sanguineLands.world.biomes.mod_surface_rules;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
@@ -23,6 +26,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.jetbrains.annotations.NotNull;
 import software.bernie.geckolib3.GeckoLib;
+import terrablender.api.Regions;
+import terrablender.api.SurfaceRuleManager;
 
 @Mod("sanguine_lands")
 public class sanguine_lands {
@@ -38,6 +43,15 @@ public class sanguine_lands {
     };
 
     private void clientSetup(final FMLClientSetupEvent event) {
+
+        event.enqueueWork(() ->
+        {
+            // Given we only add two biomes, we should keep our weight relatively low.
+            Regions.register(new mod_region(new ResourceLocation(MOD_ID, "overworld"), 2));
+
+            // Register our surface rules
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, mod_surface_rules.makeRules());
+        });
 
         ItemBlockRenderTypes.setRenderLayer(BlockInit.SANGUINE_SAPLING.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockInit.SANGUINE_DOOR.get(), RenderType.translucent());
