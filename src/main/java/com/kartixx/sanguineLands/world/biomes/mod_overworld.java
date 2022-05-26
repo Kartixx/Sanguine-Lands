@@ -41,6 +41,23 @@ public class mod_overworld
         BiomeDefaultFeatures.addSurfaceFreezing(builder);
     }
 
+    public static Biome sanguineForest()
+    {
+        MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
+        //spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityInit.BLOOD_ZOMBIE.get(), 100, 4, 4));
+        //spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityInit.BLOOD_SPIDER.get(), 100, 4, 4));
+
+        BiomeGenerationSettings.Builder biomeBuilder = new BiomeGenerationSettings.Builder();
+        BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
+        BiomeDefaultFeatures.addDefaultSoftDisks(biomeBuilder);
+        BiomeDefaultFeatures.addForestFlowers(biomeBuilder);
+        BiomeDefaultFeatures.addForestGrass(biomeBuilder);
+        BiomeDefaultFeatures.addDefaultSprings(biomeBuilder);
+
+
+        return biome(Biome.Precipitation.RAIN, Biome.BiomeCategory.FOREST, 0F, 0.9F, spawnBuilder, biomeBuilder, NORMAL_MUSIC);
+    }
+
     public static Biome hotRed()
     {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();

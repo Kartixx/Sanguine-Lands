@@ -19,6 +19,7 @@ public class mod_surface_rules
         return SurfaceRules.sequence(
                 SurfaceRules.ifTrue(SurfaceRules.isBiome(mod_biomes.HOT_RED), RED_TERRACOTTA),
                 SurfaceRules.ifTrue(SurfaceRules.isBiome(mod_biomes.COLD_BLUE), BLUE_TERRACOTTA),
+                SurfaceRules.ifTrue(SurfaceRules.isBiome(mod_biomes.SANGUINE_FOREST), grassSurface),
 
                 // Default to a grass and dirt surface
                 SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, grassSurface)

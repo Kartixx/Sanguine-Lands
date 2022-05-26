@@ -13,5 +13,6 @@ public class BiomeInit {
         IForgeRegistry<Biome> registry = event.getRegistry();
         registry.register(mod_overworld.hotRed().setRegistryName(mod_biomes.HOT_RED.location()));
         registry.register(mod_overworld.coldBlue().setRegistryName(mod_biomes.COLD_BLUE.location()));
+        registry.register(mod_overworld.sanguineForest().setRegistryName(mod_biomes.SANGUINE_FOREST.location()));
     }
 }

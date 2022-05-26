@@ -29,6 +29,8 @@ public class mod_region extends Region {
             // Replace the Vanilla desert with our hot_red biome
             builder.replaceBiome(Biomes.DESERT, mod_biomes.HOT_RED);
 
+            builder.replaceBiome(Biomes.BIRCH_FOREST, mod_biomes.SANGUINE_FOREST);
+
             // More complex example:
             // Replace specific parameter points for the frozen peaks with our cold_blue biome
             List<Climate.ParameterPoint> frozenPeaksPoints = new ParameterPointListBuilder()

@@ -47,7 +47,7 @@ public class sanguine_lands {
         event.enqueueWork(() ->
         {
             // Given we only add two biomes, we should keep our weight relatively low.
-            Regions.register(new mod_region(new ResourceLocation(MOD_ID, "overworld"), 2));
+            Regions.register(new mod_region(new ResourceLocation(MOD_ID, "overworld"), 3));
 
             // Register our surface rules
             SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, mod_surface_rules.makeRules());

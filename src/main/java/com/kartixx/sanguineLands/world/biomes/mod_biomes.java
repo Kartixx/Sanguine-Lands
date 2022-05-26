@@ -12,6 +12,7 @@ public class mod_biomes
 {
     public static final ResourceKey<Biome> HOT_RED = register("hot_red");
     public static final ResourceKey<Biome> COLD_BLUE = register("cold_blue");
+    public static final ResourceKey<Biome> SANGUINE_FOREST = register("sanguine_forest");
 
     private static ResourceKey<Biome> register(String name)
     {
