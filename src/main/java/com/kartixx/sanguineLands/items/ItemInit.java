@@ -29,6 +29,21 @@ public class ItemInit {
     public static final RegistryObject<Item> BLOOD_BUCKET = register("blood_bucket",
             () -> new BucketItem(FluidInit.BLOOD_FLUID, new Item.Properties().tab(sanguine_lands.SANGUINE_LANDS_TAB).stacksTo(1)));
 
+    public static final RegistryObject<Item> INTESTINES = register("intestines",
+            () -> new Item(new Item.Properties().tab(sanguine_lands.SANGUINE_LANDS_TAB)));
+
+    public static final RegistryObject<Item> BRAIN = register("brain",
+            () -> new Item(new Item.Properties().tab(sanguine_lands.SANGUINE_LANDS_TAB)));
+
+    public static final RegistryObject<Item> STOMACH = register("stomach",
+            () -> new Item(new Item.Properties().tab(sanguine_lands.SANGUINE_LANDS_TAB)));
+
+    public static final RegistryObject<Item> LUNGS = register("lungs",
+            () -> new Item(new Item.Properties().tab(sanguine_lands.SANGUINE_LANDS_TAB)));
+
+    public static final RegistryObject<Item> HEART = register("heart",
+            () -> new Item(new Item.Properties().tab(sanguine_lands.SANGUINE_LANDS_TAB)));
+
     // Food
     public static final RegistryObject<Item> BLOOD_APPLE = register("blood_apple",
             () -> new Item(new Item.Properties().tab(sanguine_lands.SANGUINE_LANDS_TAB).food(FoodInit.BLOOD_APPLE)));

@@ -62,6 +62,12 @@ public class mod_en_us_provider extends LanguageProvider {
         add(ItemInit.BLOOD_ZOMBIE_SPAWN_EGG.get(), "Blood Walker Spawn Egg");
         add(ItemInit.LEECH_SPAWN_EGG.get(), "Leech Spawn Egg");
 
+        add(ItemInit.INTESTINES.get(), "Intestines");
+        add(ItemInit.BRAIN.get(), "Brain");
+        add(ItemInit.STOMACH.get(), "Stomach");
+        add(ItemInit.LUNGS.get(), "Lungs");
+        add(ItemInit.HEART.get(), "Heart");
+
         add(ItemInit.BLOOD_APPLE.get(), "Bloody Apple");
 
         // Blocks

@@ -34,6 +34,7 @@
   "item.sanguine_lands.blood_shard": "Blood Shard",
   "item.sanguine_lands.blood_spider_spawn_egg": "Crimson Crawler Spawn Egg",
   "item.sanguine_lands.blood_zombie_spawn_egg": "Blood Walker Spawn Egg",
+  "item.sanguine_lands.brain": "Brain",
   "item.sanguine_lands.crimium_axe": "Crimium Axe",
   "item.sanguine_lands.crimium_boots": "Crimium Boots",
   "item.sanguine_lands.crimium_chestplate": "Crimium Chestplate",
@@ -43,7 +44,10 @@
   "item.sanguine_lands.crimium_pickaxe": "Crimium Pickaxe",
   "item.sanguine_lands.crimium_shovel": "Crimium Shovel",
   "item.sanguine_lands.crimium_sword": "Crimium Sword",
+  "item.sanguine_lands.heart": "Heart",
+  "item.sanguine_lands.intestines": "Intestines",
   "item.sanguine_lands.leech_spawn_egg": "Leech Spawn Egg",
+  "item.sanguine_lands.lungs": "Lungs",
   "item.sanguine_lands.raw_hematite": "Raw Hematite",
   "item.sanguine_lands.scarlite_axe": "Scarlite Axe",
   "item.sanguine_lands.scarlite_boots": "Scarlite Boots",
@@ -54,5 +58,6 @@
   "item.sanguine_lands.scarlite_pickaxe": "Scarlite Pickaxe",
   "item.sanguine_lands.scarlite_shovel": "Scarlite Shovel",
   "item.sanguine_lands.scarlite_sword": "Scarlite Sword",
+  "item.sanguine_lands.stomach": "Stomach",
   "itemGroup.sanguine_lands": "Sanguine Lands"
 }

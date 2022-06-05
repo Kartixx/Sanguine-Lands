@@ -112,6 +112,12 @@ public class mod_item_model_provider extends ItemModelProvider {
         oneLayerHandheldItem(ItemInit.CRIMIUM_AXE.get());
         oneLayerHandheldItem(ItemInit.CRIMIUM_SHOVEL.get());
 
+        oneLayerItem(ItemInit.INTESTINES.get());
+        oneLayerItem(ItemInit.BRAIN.get());
+        oneLayerItem(ItemInit.STOMACH.get());
+        oneLayerItem(ItemInit.LUNGS.get());
+        oneLayerItem(ItemInit.HEART.get());
+
         oneLayerHandheldItem(ItemInit.BLOOD_APPLE.get());
 
         oneLayerItem(BlockInit.SANGUINE_SAPLING.get().asItem());
