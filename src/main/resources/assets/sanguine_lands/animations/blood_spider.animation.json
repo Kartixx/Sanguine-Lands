@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.model.walk": {
+		"animation.blood_spider.walk": {
 			"loop": true,
 			"animation_length": 4.70833,
 			"bones": {
@@ -15,7 +15,7 @@
 				},
 				"leg1": {
 					"rotation": {
-						"vector": [0, "26.5 + math.sin(query.anim_time*750)*3", -30]
+						"vector": [0, "26.5 + math.sin(query.anim_time*899)*5", -30]
 					},
 					"position": {
 						"vector": [0, 2, -6]
@@ -23,7 +23,7 @@
 				},
 				"leg2": {
 					"rotation": {
-						"vector": [0, "-26.5 + math.sin(query.anim_time*750)*3", 30]
+						"vector": [0, "-26.5 + math.sin(query.anim_time*899)*5", 30]
 					},
 					"position": {
 						"vector": [0, 2, -6]
@@ -31,7 +31,7 @@
 				},
 				"leg3": {
 					"rotation": {
-						"vector": [0, "15 + math.sin((query.anim_time + 100)*750)*3", -28]
+						"vector": [0, "15 + math.sin((query.anim_time + 100)*899)*5", -28]
 					},
 					"position": {
 						"vector": [0, 2, -3]
@@ -39,7 +39,7 @@
 				},
 				"leg4": {
 					"rotation": {
-						"vector": [0, "-15 + math.sin((query.anim_time + 100)*750)*3", 28]
+						"vector": [0, "-15 + math.sin((query.anim_time + 100)*899)*5", 28]
 					},
 					"position": {
 						"vector": [0, 2, -3]
@@ -47,7 +47,7 @@
 				},
 				"leg5": {
 					"rotation": {
-						"vector": [0, "-15 + math.sin((query.anim_time + 100)*750)*3", -28]
+						"vector": [0, "-15 + math.sin((query.anim_time + 100)*899)*5", -28]
 					},
 					"position": {
 						"vector": [0, 2, 3]
@@ -55,7 +55,7 @@
 				},
 				"leg6": {
 					"rotation": {
-						"vector": [0, "30.5 + math.sin(query.anim_time*750)*3", 30]
+						"vector": [0, "30.5 + math.sin(query.anim_time*899)*5", 30]
 					},
 					"position": {
 						"vector": [0, 2, 4]
@@ -63,7 +63,7 @@
 				},
 				"leg7": {
 					"rotation": {
-						"vector": [0, "-30.5 + math.sin(query.anim_time*750)*3", -30]
+						"vector": [0, "-30.5 + math.sin(query.anim_time*899)*5", -30]
 					},
 					"position": {
 						"vector": [0, 2, 7]
@@ -71,7 +71,7 @@
 				},
 				"leg8": {
 					"rotation": {
-						"vector": [0, "15 + math.sin((query.anim_time + 100)*750)*3", 28]
+						"vector": [0, "15 + math.sin((query.anim_time + 100)*899)*5", 28]
 					},
 					"position": {
 						"vector": [0, 2, 6]
@@ -79,7 +79,7 @@
 				}
 			}
 		},
-		"animation.model.idle": {
+		"animation.blood_spider.idle": {
 			"loop": true,
 			"animation_length": 7.16667,
 			"bones": {

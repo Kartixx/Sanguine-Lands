@@ -19,7 +19,7 @@ public class leech_renderer extends GeoEntityRenderer<leech>{
 
     @Override
     public ResourceLocation getTextureLocation(leech instance) {
-        return new ResourceLocation(sanguine_lands.MOD_ID, "textures/entities/leech.png");
+        return new ResourceLocation(sanguine_lands.MOD_ID, "textures/entity/leech/leech.png");
     }
 
     @Override

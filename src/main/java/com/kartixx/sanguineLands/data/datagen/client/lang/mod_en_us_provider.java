@@ -84,6 +84,8 @@ public class mod_en_us_provider extends LanguageProvider {
         add(BlockInit.SANGUINE_TRAPDOOR.get(), "Sanguine Trapdoor");
         add(BlockInit.SANGUINE_DOOR.get(), "Sanguine Door");
 
+        add(BlockInit.SANGUINE_INFUSER.get(), "Sanguine Infuser");
+
         //Entities
         add(EntityInit.BLOOD_ZOMBIE.get(), "Blood Walker");
         add(EntityInit.BLOOD_SPIDER.get(), "Crimson Crawler");

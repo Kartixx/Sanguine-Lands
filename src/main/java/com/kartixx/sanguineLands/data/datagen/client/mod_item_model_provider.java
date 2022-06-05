@@ -71,9 +71,7 @@ public class mod_item_model_provider extends ItemModelProvider {
         simpleBlockItem(BlockInit.SANGUINE_FENCE_GATE.get().asItem());
         simpleBlockItem(BlockInit.SANGUINE_PRESSURE_PLATE.get().asItem());
 
-        oneLayerItem(BlockInit.SANGUINE_SAPLING.get().asItem());
-
-
+        simpleBlockItem(BlockInit.SANGUINE_INFUSER.get().asItem());
 
         //Simple Items
 
@@ -115,6 +113,8 @@ public class mod_item_model_provider extends ItemModelProvider {
         oneLayerHandheldItem(ItemInit.CRIMIUM_SHOVEL.get());
 
         oneLayerHandheldItem(ItemInit.BLOOD_APPLE.get());
+
+        oneLayerItem(BlockInit.SANGUINE_SAPLING.get().asItem());
 
         SpawnItem(ItemInit.BLOOD_ZOMBIE_SPAWN_EGG.get());
         SpawnItem(ItemInit.BLOOD_SPIDER_SPAWN_EGG.get());

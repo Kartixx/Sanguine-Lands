@@ -1,5 +1,6 @@
 package com.kartixx.sanguineLands.blocks;
 
+import com.kartixx.sanguineLands.blocks.sanguine_infuser.sanguine_infuser_block;
 import com.kartixx.sanguineLands.blocks.wood.mod_flammable_rotated_pillar_block;
 import com.kartixx.sanguineLands.items.ItemInit;
 import com.kartixx.sanguineLands.world.feature.tree.sanguine_tree_grower;
@@ -24,6 +25,14 @@ import java.util.function.Supplier;
 public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, sanguine_lands.MOD_ID);
     public static final DeferredRegister<Item> ITEMS = ItemInit.ITEMS;
+
+    public static final RegistryObject<Block> SANGUINE_INFUSER = register("sanguine_infuser",
+            () -> new sanguine_infuser_block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    .noOcclusion()
+                    .color(MaterialColor.COLOR_GRAY)
+                    .requiresCorrectToolForDrops()
+            ),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(sanguine_lands.SANGUINE_LANDS_TAB)));
 
     public static final RegistryObject<Block> BLOOD_IRON_BLOCK = register("blood_iron_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)

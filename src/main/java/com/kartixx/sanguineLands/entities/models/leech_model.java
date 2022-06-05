@@ -8,17 +8,17 @@ import software.bernie.geckolib3.model.AnimatedGeoModel;
 public class leech_model extends AnimatedGeoModel<leech> {
     @Override
     public ResourceLocation getModelLocation(leech object) {
-        return new ResourceLocation(sanguine_lands.MOD_ID, "entities/models/leech.geo.json");
+        return new ResourceLocation(sanguine_lands.MOD_ID, "geo/leech.geo.json");
     }
 
     @Override
     public ResourceLocation getTextureLocation(leech object) {
-        return new ResourceLocation(sanguine_lands.MOD_ID, "textures/entities/leech.png");
+        return new ResourceLocation(sanguine_lands.MOD_ID, "textures/entity/leech/leech.png");
     }
 
     @Override
     public ResourceLocation getAnimationFileLocation(leech animatable) {
-        return new ResourceLocation(sanguine_lands.MOD_ID, "entities/animations/leech.animation.json");
+        return new ResourceLocation(sanguine_lands.MOD_ID, "animations/leech.animation.json");
     }
 }
 

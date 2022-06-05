@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "sanguine_lands:block/sanguine_infuser" },
+    "facing=east": { "model": "sanguine_lands:block/sanguine_infuser", "y": 90 },
+    "facing=south": { "model": "sanguine_lands:block/sanguine_infuser", "y": 180 },
+    "facing=west": { "model": "sanguine_lands:block/sanguine_infuser", "y": 270 }
+  }
+}

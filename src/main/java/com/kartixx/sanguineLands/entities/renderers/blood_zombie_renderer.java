@@ -19,7 +19,7 @@ public class blood_zombie_renderer extends GeoEntityRenderer<blood_zombie>{
 
     @Override
     public ResourceLocation getTextureLocation(blood_zombie instance) {
-        return new ResourceLocation(sanguine_lands.MOD_ID, "textures/entities/blood_zombie.png");
+        return new ResourceLocation(sanguine_lands.MOD_ID, "textures/entity/blood_zombie/blood_zombie.png");
     }
 
     @Override

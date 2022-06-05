@@ -19,7 +19,7 @@ public class blood_spider_renderer extends GeoEntityRenderer<blood_spider>{
 
     @Override
     public ResourceLocation getTextureLocation(blood_spider instance) {
-        return new ResourceLocation(sanguine_lands.MOD_ID, "textures/entities/blood_spider.png");
+        return new ResourceLocation(sanguine_lands.MOD_ID, "textures/entity/blood_spider/blood_spider.png");
     }
 
     @Override
